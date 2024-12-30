@@ -3,3 +3,114 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+  font-family: "roboto";
+  color: #4d4d4d;
+}
+
+.width-max {
+  width: 100%;
+}
+
+/* colors */
+.white-bg {
+  background-color: #fff;
+}
+.black-bg {
+  background-color: #000;
+}
+
+h1 {
+  font-size: 5rem;
+}
+p,
+a {
+  font-size: 2rem;
+}
+
+/* flexbox */
+.flex-default {
+  display: flex;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+.flex-align-start {
+  align-items: start;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-end {
+  align-items: end;
+}
+/* gaps */
+.gap-xl {
+  gap: 10rem;
+}
+.gap-x {
+  gap: 8rem;
+}
+.gap-l {
+  gap: 6rem;
+}
+.gap-m {
+  gap: 4rem;
+}
+.gap-s {
+  gap: 2rem;
+}
+.gap-xs {
+  gap: 1rem;
+}
+
+/* navbar */
+nav {
+  position: fixed;
+  padding: 2rem 4rem;
+  transition: background-color 0.5s ease-in;
+}
+.nav-logo {
+  width: 12rem;
+  object-fit: contain;
+}
+.nav-menu-container {
+  border: none;
+  max-width: 5rem;
+  transform: rotate(-45deg);
+  background-color: transparent;
+}
+.nav-scroll-shadded {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* header */
+header {
+  padding-top: 10rem;
+}
+/* footer */
+footer {
+  background-color: #263238;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+.footer-right li {
+  list-style: none;
+}
+.footer-right li a {
+  text-decoration: none;
+  color: white;
+}
