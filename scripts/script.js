@@ -1,11 +1,18 @@
 //DOM linked
 const navigation = document.querySelector("nav");
+const navMenuContainer = document.querySelector(".nav-menu-container");
+const navMenuLine = document.querySelectorAll(".nav-menu-line");
+const menuList = document.querySelector(".menu-list");
+const html = document.querySelector("html");
+
+const thumbnailImage = document
+  .querySelector(".attachment-post-thumbnail")
+  .classList.add("radius-right-side");
 
 //DOM events
-window.addEventListener(
-  "load",
-  () => window.scrollY > 0 && navigation.classList.add("nav-scroll-shadded")
-);
+window.addEventListener("load", () => {
+  window.scrollY > 0 && navigation.classList.add("nav-scroll-shadded");
+});
 window.addEventListener("scroll", () => {
   if (!is_scrolled) {
     is_scrolled = true;
@@ -34,3 +41,9 @@ function nav_event() {
     is_scrolled = false;
   }, 300);
 }
+
+// Open menu
+navMenuContainer.addEventListener("click", () => {
+  menuList.classList.toggle("menu-list-revealed");
+  navMenuLine.forEach((line) => line.classList.toggle("nav-menu-active"));
+});
